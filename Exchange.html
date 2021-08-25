@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="exstyles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+    <title>dev.finance$</title>
+  </head>
+  <body>
+    <header>
+      <h1>Exchange<span>!</span></h1>
+    </header>
+
+    <main class="container">
+      <div class="card">
+        <form id="form" action="" onsubmit="Form.submit(event)">
+            <div class="changeCurrency">
+                <p id="currencyChange"class="currencyChange">999 R$</p>
+            </div>
+            
+            <div class="formCurrency">
+                
+                <div class="formMoney">
+                    <label class="currencyLabel" for="number">Currency</label>
+                    <input type="number" id="number" name="number">
+                    <br>
+                    <br>
+                    
+                </div>
+                
+                <div class="selectCurrency">
+
+                    <div class="selectCurrencyFrom">
+                        <label for="chooseCurrency">From</label>
+                    
+                        <select name="currencyFrom" id="currencyFrom">
+                            <option id="BRL" value="BRL">Brazilian Real</option>
+                            <option id="USD" value="USD">USA Dollar</option>
+                        </select>
+                    </div>
+
+
+                    <div class="selectCurrencyTo">
+                        <label for="chooseCurrency">To</label>
+            
+                        <select name="currencyTo" id="currencyTo">
+                            <option id="BRL" value="BRL">Brazilian Real</option>
+                            <option id="USD" value="USD">USA Dollar</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <button class="button" type="button" onclick="Calc.calc()">Currency</button>
+
+
+            
+            
+        </form>
+      </div>
+      
+    </main>
+
+    <footer>
+      <p>Deseja acompanhar as suas economias novamente? clique <a href="./index.html">aqui</a></p>
+    </footer>
+
+    <script src="./exscript.js">
+    </script>
+
+  </body>
+</html>
